@@ -22,6 +22,7 @@ body {
   justify-content: center;
   align-items: center;
   margin: 2.5rem 2rem;
+  gap: 1rem;
 }
 
 .card-container {
@@ -34,8 +35,12 @@ body {
 }
 
 .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   color: #fff;
   padding: 3rem;
+  height: 100%;
   width: 100%;
 }
 
@@ -92,5 +97,14 @@ body {
 }
 
 /* Desktop */
-@media screen and (min-width: 375px) {
+@media screen and (min-width: 376px) {
+  .card-preview {
+    height: 100%;
+  }
+
+  .card-container {
+    flex-direction: row;
+    max-width: 950px;
+    height: 450px;
+  }
 }
