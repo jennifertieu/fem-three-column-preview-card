@@ -62,6 +62,19 @@ body {
   background: var(--very-light-gray);
   padding: 1rem 2rem;
   border-radius: 30px;
+  cursor: pointer;
+  color: inherit;
+}
+
+.card-button:hover {
+  background: inherit;
+  border: 1px solid var(--very-light-gray);
+}
+
+.sedan .card-button:hover,
+.suv .card-button:hover,
+.luxury .card-button:hover {
+  color: var(--very-light-gray);
 }
 
 .sedan {
