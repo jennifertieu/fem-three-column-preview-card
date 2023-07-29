@@ -29,13 +29,13 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-radius: 5px;
+  border-radius: 10px;
   overflow: hidden;
 }
 
 .card {
   color: #fff;
-  padding: 2rem;
+  padding: 3rem;
   width: 100%;
 }
 
@@ -43,22 +43,44 @@ body {
   font-family: "Big Shoulders Display", cursive;
   text-transform: uppercase;
   font-weight: 700;
+  color: var(--very-light-gray);
 }
 
 .card-details {
   font-weight: 400;
+  color: var(--transparent-white);
+  line-height: 1.5;
+}
+
+.card-button {
+  border: none;
+  background: var(--very-light-gray);
+  padding: 1rem 2rem;
+  border-radius: 30px;
 }
 
 .sedan {
   background: var(--bright-orange);
 }
 
+.sedan .card-button {
+  color: var(--bright-orange);
+}
+
 .suv {
   background: var(--dark-cyan);
 }
 
+.suv .card-button {
+  color: var(--dark-cyan);
+}
+
 .luxury {
   background: var(--very-dark-cyan);
+}
+
+.luxury .card-button {
+  color: var(--very-dark-cyan);
 }
 
 .attribution {
